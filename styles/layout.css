@@ -1,43 +1,44 @@
 .container {
   width: 100px;
-  height: 700px;
+  height: 100%;
   left: 0;
   background-color: #f7f6ff;
-  display: inline-block;
-  transition: all 2s, 2s;
-  max-width: fit-content;
+}
 
-  box-shadow: rgba(0, 0, 0, 0.25);
+.container:hover {
+  width: 206px;
+  transition: width 2s;
+}
+.container:hover .link {
+display: block;
+margin-left: 20px;
+}
+.link {
+object-fit: contain;
 }
 a {
   text-decoration: none;
 }
 
-.tools {
-  box-shadow: rgba(0, 0, 0, 0.25);
-  padding: 16px;
-}
 .box {
   padding: 20px;
-  
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.container:hover {
-  width: 206px;
-  transition-property: initial;
-  transition: initial;
-  max-width: initial;
+.box:hover {
+    object-position: left;
+    text-decoration: underline;
 }
-
 .img-logo {
   width: 68px;
   height: 34px;
   margin-left: calc(50% - 68px / 2);
 }
 
-.img-line {
-  width: 62.24px;
-  margin-left: calc(50% - 62.24px / 2);
+.logoLine {
+    width: 62.24px;
+    margin-left: calc(50% - 62.24px/2);
 }
 
 .box > .img-home {
@@ -45,14 +46,9 @@ a {
   height: 25px;
   margin-left: calc(50% - 25px / 2);
 }
+
 .link {
   display: none;
-  transition-property: width;
-}
-
-.box .link:hover {
-  text-decoration: underline;
-  max-width: fit-content;
 }
 
 .img-agenda {
@@ -71,11 +67,15 @@ a {
   margin-left: calc(50% - 40px / 2);
 }
 .footer {
-  display: block;
-  text-align: center;
   font-size: 11px;
+  position: absolute;
+  display: inline-block;
+  transform: translateX(150px);
 }
+.footerLine {
+    width: 350px;
+}
+
 footer a {
   color: #02577a;
-  margin-bottom: 10px;
 }
