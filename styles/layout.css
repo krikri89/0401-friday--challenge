@@ -1,0 +1,10 @@
+.container {
+    width: 100px;
+    height: 906px;
+    left: 0;
+    display: inline-block;
+    background-color: #F7F6FF;
+}
+.hover {
+    display: grid;
+}
