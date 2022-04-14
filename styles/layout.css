@@ -13,12 +13,6 @@
   display: block;
   margin-left: 20px;
 }
-.link {
-  object-fit: contain;
-}
-a {
-  text-decoration: none;
-}
 
 .box {
   padding: 20px;
@@ -73,7 +67,7 @@ a {
   display: inline-block;
   transform: translateX(150px);
   bottom: 0px;
-  width: 346px;
+  width: 246px;
   left: 50%;
   text-align: center;
   color: #02577a;
