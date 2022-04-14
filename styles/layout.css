@@ -29,18 +29,18 @@ a {
   object-position: left;
   text-decoration: underline;
 }
-.img-logo {
+.container .logo {
   width: 68px;
   height: 34px;
   margin-left: calc(50% - 68px / 2);
 }
 
-.logoLine {
+.container hr {
   width: 62.24px;
   margin-left: calc(50% - 62.24px / 2);
 }
 
-.box > .img-home {
+.box .img-home {
   width: 25px;
   height: 25px;
   margin-left: calc(50% - 25px / 2);
@@ -72,9 +72,12 @@ a {
   position: absolute;
   display: inline-block;
   transform: translateX(150px);
-}
-.footerLine {
-  width: 350px;
+  bottom: 0px;
+  width: 346px;
+  left: 50%;
+  text-align: center;
+  color: #02577a;
+  border-top: 1px solid #02577a;
 }
 
 .footer a {
