@@ -1,9 +1,10 @@
 .container {
+  top: 0;
   width: 100px;
   height: 100%;
   left: 0;
   background-color: var(--container-color);
-  position: relative;
+  position: fixed;
 }
 
 .box {
@@ -57,10 +58,14 @@
   color: var(--secondary-color);
 }
 /* ----------------- */
-
+.section-1 {
+  display: inline-block;
+  width: 90%;
+}
 .col-1 {
-  position: absolute;
-  width: 341px;
+  display: inline-block;
+  /* position: absolute; */
+  width: 40%;
   height: 80px;
   left: 206px;
   top: 89px;
@@ -78,12 +83,13 @@ input {
 }
 
 .col-2 {
-  position: absolute;
-  width: 516px;
+  /* position: absolute; */
+  display: inline-block;
+  width: 40%;
   height: 147px;
   left: 50%;
   top: 57px;
-  padding: 15px;
+  padding: 10px;
   background-color: var(--white-color);
   border-radius: 25px;
   text-align: center;
@@ -91,7 +97,7 @@ input {
 }
 
 .col-3 {
-  position: absolute;
+  /* position: absolute; */
   left: 50%;
   transform: translate(-50% -50%);
   width: 528.89px;
@@ -105,7 +111,7 @@ input {
 }
 
 .center-image {
-  position: absolute;
+  /* position: absolute; */
   /* transform: translate(-50% -50%); */
   width: 1200px;
   height: 432px;
