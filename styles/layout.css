@@ -2,7 +2,7 @@
   width: 100px;
   height: 100%;
   left: 0;
-  background-color: #f7f6ff;
+  background-color: var(--container-color);
 }
 
 .container:hover {
@@ -11,7 +11,7 @@
 }
 .container:hover .link {
   display: block;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .box {
@@ -22,6 +22,9 @@
 .box:hover {
   object-position: left;
   text-decoration: underline;
+  border-radius: 25px 0 0 25px;
+  padding: 16px;
+  background-color: var(--white-color);
 }
 .container .logo {
   width: 68px;
@@ -30,8 +33,9 @@
 }
 
 .container hr {
-  width: 62.24px;
-  margin-left: calc(50% - 62.24px / 2);
+  width: 64.2px;
+  margin-left: calc(50% - 64.2px / 2);
+  margin-top: 20px;
 }
 
 .box .img-home {
@@ -43,7 +47,7 @@
 .link {
   display: none;
   font-size: 20px;
-  color: #c4c4c4;
+  color: var(--grey-color);
 }
 
 .img-agenda {
@@ -70,11 +74,11 @@
   width: 246px;
   left: 50%;
   text-align: center;
-  color: #02577a;
-  border-top: 1px solid #02577a;
+  color: var(--secondary-color);
+  border-top: 1px solid var(--secondary-color);
 }
 
 .footer a {
   font-size: 15px;
-  color: #02577a;
+  color: var(--secondary-color);
 }
