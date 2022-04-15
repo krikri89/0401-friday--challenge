@@ -3,60 +3,49 @@
   height: 100%;
   left: 0;
   background-color: var(--container-color);
+  position: relative;
 }
 
 .box {
   padding: 20px;
-  display: flex;
+  position: relative;
 }
 
 .box:hover {
   object-position: left;
-  text-decoration: underline;
   border-radius: 25px 0 0 25px;
   padding: 16px;
   background-color: var(--white-color);
 }
+
 .container .logo {
   width: 68px;
   height: 34px;
-  margin-left: calc(50% - 68px / 2);
+  position: relative;
+  margin: 52px 0 24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container hr {
-  width: 64.2px;
-  margin-left: calc(50% - 64.2px / 2);
-  margin-top: 20px;
+  width: 64px;
+  max-width: 64px;
+  height: 2px;
+  background-color: var(--grey-color);
+  margin: auto;
+  border: none;
+  margin-bottom: 32px;
 }
 
-.box .img-home {
-  width: 25px;
-  height: 25px;
-  margin-left: calc(50% - 25px / 2);
-}
-
-.img-agenda {
-  width: 25px;
-  height: 25px;
-  margin-left: calc(50% - 25px / 2);
-}
-.img-ff {
-  width: 25px;
-  height: 25px;
-  margin-left: calc(50% - 25px / 2);
-}
-.img-game {
-  width: 40px;
-  height: 25px;
-  margin-left: calc(50% - 40px / 2);
+.container .box .image {
+  position: relative;
+  left: 37;
 }
 .footer {
   font-size: 11px;
   position: absolute;
-  display: inline-block;
-  transform: translateX(150px);
   bottom: 0px;
-  width: 246px;
+  width: 200px;
   left: 50%;
   text-align: center;
   color: var(--secondary-color);
@@ -66,4 +55,60 @@
 .footer a {
   font-size: 15px;
   color: var(--secondary-color);
+}
+/* ----------------- */
+
+.col-1 {
+  position: absolute;
+  width: 341px;
+  height: 80px;
+  left: 206px;
+  top: 89px;
+  font-size: 24px;
+}
+input {
+  border: none;
+  background-color: inherit;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: black;
+  font-size: 20px;
+}
+
+.col-2 {
+  position: absolute;
+  width: 516px;
+  height: 147px;
+  left: 50%;
+  top: 57px;
+  padding: 15px;
+  background-color: var(--white-color);
+  border-radius: 25px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.col-3 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50% -50%);
+  width: 528.89px;
+  height: 23px;
+  top: 630px;
+  border: 2px solid #02577a;
+  border-radius: 25px;
+  padding: 35px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.center-image {
+  position: absolute;
+  /* transform: translate(-50% -50%); */
+  width: 1200px;
+  height: 432px;
+  left: 100px;
+  top: 200px;
 }

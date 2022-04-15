@@ -3,10 +3,11 @@
   height: 100%;
   left: 0;
   background-color: var(--container-color);
+  position: fixed;
 }
 
 .container:hover {
-  width: 250px;
+  width: 205px;
   transition: width 0.5s;
 }
 .container:hover .link {
@@ -26,22 +27,30 @@
   padding: 16px;
   background-color: var(--white-color);
 }
+
 .container .logo {
   width: 68px;
   height: 34px;
-  margin-left: calc(50% - 68px / 2);
+  position: relative;
+  margin: 52px 0 24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container hr {
-  width: 64.2px;
-  margin-left: calc(50% - 64.2px / 2);
-  margin-top: 20px;
+  width: 64px;
+  max-width: 64px;
+  height: 2px;
+  background-color: var(--grey-color);
+  margin: auto;
+  border: none;
+  margin-bottom: 32px;
+  transition: max-width 0.4s ease-in 0s;
 }
 
-.box .img-home {
-  width: 25px;
-  height: 25px;
-  margin-left: calc(50% - 25px / 2);
+.container .box .image {
+  position: relative;
+  left: 37;
 }
 
 .link {
@@ -50,26 +59,10 @@
   color: var(--grey-color);
 }
 
-.img-agenda {
-  width: 25px;
-  height: 25px;
-  margin-left: calc(50% - 25px / 2);
-}
-.img-ff {
-  width: 25px;
-  height: 25px;
-  margin-left: calc(50% - 25px / 2);
-}
-.img-game {
-  width: 40px;
-  height: 25px;
-  margin-left: calc(50% - 40px / 2);
-}
 .footer {
   font-size: 11px;
   position: absolute;
   display: inline-block;
-  transform: translateX(150px);
   bottom: 0px;
   width: 246px;
   left: 50%;
