@@ -6,28 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../styles/global.css" />
     <link rel="stylesheet" href="./../styles/home.css" />
+    <link rel="stylesheet" href="./../styles/footer.css">
     <link rel="stylesheet" href="./../assets/" />
     <title>Calendar</title>
   </head>
   <body>
-    <nav class="container">
-      <img class="logo" src="../assets/logo.svg" alt="Logo" />
-      <hr />
-      <div class="box">
-        <a class="img-home" href="http://localhost:3019/index.html">
-          <img src="../assets/home.svg" alt="Home"
-        /></a>
+    <header>
+      <nav class="container">
+        <img class="logo" src="../assets/logo.svg" alt="Logo" />
+        <hr />
+        <div class="box">
+          <a class="img-home" href="http://localhost:3019/index.html">
+            <img src="../assets/home.svg" alt="Home"
+          /></a>
+        </div>
+        <div class="box">
+          <img src="../assets/calendar.svg" alt="Calendar" class="img-agenda" />
+        </div>
+        <div class="box">
+          <img src="../assets/ff.svg" alt="FF" class="img-ff" />
+        </div>
+        <div class="box">
+          <img src="../assets/games.svg" alt="Games" class="img-game" />
+        </div>
+      </nav>
+    </header>
+    <div class="left_column">
+      <div>SCSS</div>
+      <div>Try mixin</div>
+      <icon>...</icon>
+    <div>
+      <div>React</div>
+      <div>Lift state up</div>
+      <icon>...</icon>
+    <div>
+      <div>PHP</div>
+      <div>Use isset()</div>
+      <icon>...</icon>
+    <div class="right_column">calendar</div>
+    <footer class="footer">
+      <div>
+        <a href="#">&copy Baltic Institute of Technology</a>
       </div>
-      <div class="box">
-        <img src="../assets/calendar.svg" alt="Calendar" class="img-agenda" />
-      </div>
-      <div class="box">
-        <img src="../assets/ff.svg" alt="FF" class="img-ff" />
-      </div>
-      <div class="box">
-        <img src="../assets/games.svg" alt="Games" class="img-game" />
-      </div>
-    </nav>
-    
+    </footer>
   </body>
 </html>

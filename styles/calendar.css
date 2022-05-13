@@ -1,0 +1,10 @@
+.left_column .right_column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left_column {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+}

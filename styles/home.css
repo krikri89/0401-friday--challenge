@@ -42,21 +42,7 @@
   position: relative;
   left: 37;
 }
-.footer {
-  font-size: 11px;
-  position: absolute;
-  bottom: 0px;
-  width: 200px;
-  left: 50%;
-  text-align: center;
-  color: var(--secondary-color);
-  border-top: 1px solid var(--secondary-color);
-}
 
-.footer a {
-  font-size: 15px;
-  color: var(--secondary-color);
-}
 /* ----------------- */
 .section-1 {
   display: inline-block;
