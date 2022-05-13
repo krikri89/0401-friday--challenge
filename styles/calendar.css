@@ -1,29 +1,33 @@
-.left_column {
-  display: grid;
-  /* flex-direction: column; */
-  grid-column: 1fr 1fr 1fr;
-}
-
-.left_column .tasks {
-  margin: 100px;
-  width: 350px;
-  height: 100px;
-  background-color: var(--white-color);
-  border-radius: 20px;
-}
-
 .box :hover .image {
   filter: invert(100%);
   cursor: pointer;
 }
-.right-column {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.calendar {
-  width: 45rem;
-  height: 52rem;
-  background-color: var(--white-color);
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 60px;
 }
 
+.left_column .tasks {
+  margin: 20px 100px;
+  width: 500px;
+  height: 100px;
+  background-color: var(--white-color);
+  border-radius: 20px;
+}
+.left_column p {
+  color: var(--grey-color);
+}
+.left_column .icon {
+  position: absolute;
+}
+
+.right_column {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+  border-radius: 20px;
+}
+.weekdays {
+  color: var(--grey-color);
+}
