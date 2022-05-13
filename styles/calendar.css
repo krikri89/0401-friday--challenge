@@ -8,3 +8,11 @@
   flex-direction: column;
   background-color: var(--white-color);
 }
+
+.box .image:hover {
+  filter: invert(100%);
+  cursor: pointer;
+}
+.box .image:nth-child(2) {
+  filter: invert(100%);
+}
